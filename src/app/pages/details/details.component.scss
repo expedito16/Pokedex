@@ -1,4 +1,10 @@
 @import '../../../config-scss/rem-calc.scss';
+@import '../../../config-scss/rem-calc.scss';
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 :host {
   main {
@@ -115,5 +121,14 @@
         }
       }
     }
+  }
+
+  .btn__back {
+    background: var(--azul);
+    color: var(--branco);
+    border-radius: 10px;
+    padding: 14px 0;
+    cursor: pointer;
+    font-size: rem-calc(15);
   }
 }
