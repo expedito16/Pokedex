@@ -1,6 +1,10 @@
 <!-- Search -->
 <app-search (emmitSearch)="getSearch($event)"></app-search>
 
+<div class="container">
+  <mat-spinner color="accent" *ngIf="loading"></mat-spinner>
+</div>
+
 <section class="listagem">
   <ng-template ngFor let-pokemon [ngForOf]="getAllPokemons">
     <a [routerLink]="['details', pokemon.status.id]" class="pokemon" *ngIf="pokemon.status">

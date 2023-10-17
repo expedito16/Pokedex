@@ -1,7 +1,7 @@
 <poke-header></poke-header>
 
 <main>
-  <ng-template [ngIf]="isLoading">
+  <ng-template [ngIf]="isShow">
     <section class="pokemon__names">
       <h1 class="slideInLeft">{{pokemon[0].name}}</h1>
       <h2 class="slideInRight">{{pokemon[1].names[0].name}}</h2>
@@ -43,3 +43,7 @@
     *ngIf="apiError"
   >
 </main>
+
+<div class="container">
+  <mat-spinner color="accent" *ngIf="loading"></mat-spinner>
+</div>

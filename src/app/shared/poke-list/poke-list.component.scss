@@ -5,6 +5,13 @@ $padding: rem-calc(20);
 :host {
   width: 100%;
 
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: rem-calc(20);
+  }
+
   .listagem {
     display: flex;
     justify-content: space-between;

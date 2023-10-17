@@ -3,6 +3,12 @@
 
 
 :host {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   main {
     margin-top: rem-calc(40);
 

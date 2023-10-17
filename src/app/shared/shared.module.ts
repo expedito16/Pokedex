@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { PokeHeaderComponent } from './poke-header/poke-header.component';
 import { SearchComponent } from './search/search.component';
 import { PokeListComponent } from './poke-list/poke-list.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -16,12 +17,14 @@ import { PokeListComponent } from './poke-list/poke-list.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     PokeHeaderComponent,
     SearchComponent,
-    PokeListComponent
+    PokeListComponent,
+    MatProgressSpinnerModule
   ]
 })
 export class SharedModule { }
